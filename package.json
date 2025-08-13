@@ -1,0 +1,12 @@
+{
+  "name": "universal-business-template",
+  "version": "1.0.0",
+  "description": "Plantilla universal para generar aplicaciones de negocio",
+  "main": "auto-generator.js",
+  "scripts": {
+    "start": "node auto-generator.js"
+  },
+  "keywords": ["business", "template", "generator"],
+  "author": "",
+  "license": "MIT"
+}
