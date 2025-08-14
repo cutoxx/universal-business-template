@@ -163,6 +163,192 @@ const industryConfigs = {
       "huespedes_recurrentes",
       "temporada_alta_baja"
     ]
+  },
+
+  // VETERINARIA
+  veterinary: {
+    terminology: {
+      resource: "consultorio",
+      resources: "consultorios",
+      customer: "mascota",
+      customers: "mascotas",
+      booking: "cita",
+      bookings: "citas",
+      staff: "veterinario",
+      manager: "coordinador"
+    },
+    
+    businessRules: {
+      maxAdvanceBooking: 60,
+      cancellationPolicy: 4,
+      defaultDuration: 45,
+      bufferTime: 15,
+      emergencySlots: 3
+    },
+    
+    dashboardMetrics: [
+      "citas_diarias",
+      "mascotas_atendidas",
+      "emergencias_atendidas",
+      "vacunaciones_pendientes",
+      "cirugias_programadas",
+      "ingresos_servicios"
+    ]
+  },
+
+  // TALLER MECÁNICO
+  mechanic: {
+    terminology: {
+      resource: "bahia",
+      resources: "bahias",
+      customer: "vehiculo",
+      customers: "vehiculos",
+      booking: "orden",
+      bookings: "ordenes",
+      staff: "mecanico",
+      manager: "jefe_taller"
+    },
+    
+    businessRules: {
+      maxAdvanceBooking: 30,
+      cancellationPolicy: 12,
+      defaultDuration: 180,
+      bufferTime: 30,
+      emergencyService: true
+    },
+    
+    dashboardMetrics: [
+      "ordenes_diarias",
+      "vehiculos_reparados",
+      "tiempo_promedio_reparacion",
+      "repuestos_utilizados",
+      "ingresos_servicios",
+      "satisfaccion_cliente"
+    ]
+  },
+
+  // SPA Y WELLNESS
+  spa: {
+    terminology: {
+      resource: "sala",
+      resources: "salas",
+      customer: "cliente",
+      customers: "clientes",
+      booking: "sesion",
+      bookings: "sesiones",
+      staff: "terapeuta",
+      manager: "coordinador_spa"
+    },
+    
+    businessRules: {
+      maxAdvanceBooking: 90,
+      cancellationPolicy: 24,
+      defaultDuration: 90,
+      bufferTime: 20,
+      packageDeals: true
+    },
+    
+    dashboardMetrics: [
+      "sesiones_diarias",
+      "clientes_recurrentes",
+      "servicios_mas_populares",
+      "ocupacion_salas",
+      "paquetes_vendidos",
+      "satisfaccion_terapeutas"
+    ]
+  },
+
+  // FARMACIA
+  pharmacy: {
+    terminology: {
+      resource: "producto",
+      resources: "productos",
+      customer: "cliente",
+      customers: "clientes",
+      booking: "pedido",
+      bookings: "pedidos",
+      staff: "farmaceutico",
+      manager: "jefe_farmacia"
+    },
+    
+    businessRules: {
+      maxAdvanceBooking: 7,
+      cancellationPolicy: 2,
+      defaultDuration: 15,
+      bufferTime: 5,
+      prescriptionRequired: true
+    },
+    
+    dashboardMetrics: [
+      "ventas_diarias",
+      "medicamentos_dispensados",
+      "recetas_atendidas",
+      "inventario_bajo",
+      "clientes_frecuentes",
+      "productos_mas_vendidos"
+    ]
+  },
+
+  // LIBRERÍA/PAPELERÍA
+  bookstore: {
+    terminology: {
+      resource: "producto",
+      resources: "productos",
+      customer: "cliente",
+      customers: "clientes",
+      booking: "pedido",
+      bookings: "pedidos",
+      staff: "vendedor",
+      manager: "encargado"
+    },
+    
+    businessRules: {
+      maxAdvanceBooking: 14,
+      cancellationPolicy: 24,
+      defaultDuration: 30,
+      bufferTime: 10,
+      specialOrders: true
+    },
+    
+    dashboardMetrics: [
+      "ventas_diarias",
+      "libros_mas_vendidos",
+      "pedidos_especiales",
+      "inventario_rotacion",
+      "eventos_literarios",
+      "clientes_frecuentes"
+    ]
+  },
+
+  // BARBERÍA
+  barbershop: {
+    terminology: {
+      resource: "silla",
+      resources: "sillas",
+      customer: "cliente",
+      customers: "clientes",
+      booking: "cita",
+      bookings: "citas",
+      staff: "barbero",
+      manager: "encargado"
+    },
+    
+    businessRules: {
+      maxAdvanceBooking: 21,
+      cancellationPolicy: 2,
+      defaultDuration: 45,
+      bufferTime: 10,
+      walkInsAllowed: true
+    },
+    
+    dashboardMetrics: [
+      "cortes_diarios",
+      "clientes_atendidos",
+      "servicios_populares",
+      "barberos_productivos",
+      "tiempo_promedio_servicio",
+      "clientes_recurrentes"
+    ]
   }
 };
 

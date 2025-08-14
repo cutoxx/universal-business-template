@@ -215,6 +215,12 @@ Tipos de negocio disponibles:
   workshop     - Taller/Centro educativo
   salon        - Salón de belleza/Spa
   rental       - Cabañas/Arriendos
+  veterinary   - Veterinaria/Clínica animal
+  mechanic     - Taller mecánico
+  spa          - Spa y wellness
+  pharmacy     - Farmacia
+  bookstore    - Librería/Papelería
+  barbershop   - Barbería
 
 Ejemplos:
   node auto-generator.js restaurant "Restaurante La Italiana"
@@ -226,7 +232,7 @@ Ejemplos:
 
   const [businessType, businessName, ...options] = args;
   
-  const validTypes = ['restaurant', 'clinic', 'gym', 'workshop', 'salon', 'rental'];
+  const validTypes = ['restaurant', 'clinic', 'gym', 'workshop', 'salon', 'rental', 'veterinary', 'mechanic', 'spa', 'pharmacy', 'bookstore', 'barbershop'];
   if (!validTypes.includes(businessType)) {
     console.error(`❌ Tipo de negocio '${businessType}' no válido.`);
     console.log(`Tipos disponibles: ${validTypes.join(', ')}`);
